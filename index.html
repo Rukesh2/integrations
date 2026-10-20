@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova Store | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" data-track="nav_home">NOVA<span>STORE</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" data-track="nav_home">Home</a>
+      <a href="product.html" data-track="nav_product">Products</a>
+      <a href="payments.html" data-track="nav_payments">Payments</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">EVERYDAY TECH, SIMPLIFIED</p>
+        <h1>Small upgrades.<br><span>Big difference.</span></h1>
+        <p>Explore useful tech essentials picked for your everyday routine.</p>
+        <div class="actions">
+          <a class="button primary" href="product.html" data-track="hero_shop_click">Explore products</a>
+          <button class="button secondary" type="button" data-track="hero_learn_click" id="learn-button">Why Nova?</button>
+        </div>
+        <p class="inline-message" id="learn-message" hidden>Thoughtful essentials, simple shopping, no real checkout in this demo.</p>
+      </div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=85" alt="Minimal desk setup with electronic devices">
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">START HERE</p><h2>Explore the demo</h2></div>
+        <p>Use these pages to test navigation, clicks, hovers and form events.</p>
+      </div>
+      <div class="card-grid">
+        <a class="feature-card" href="product.html" data-track="product_card_click">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30eauto=format&fit=crop&w=900&q=80" alt="Product preview" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80'">
+          <div class="card-body"><p class="eyebrow">DISCOVER</p><h3>Product details</h3><p>View an item and try the add-to-cart interaction.</p><span class="text-link">View product →</span></div>
+        </a>
+        <a class="feature-card" href="payments.html" data-track="payment_card_click">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45dauto=format&fit=crop&w=900&q=80" alt="Payment card and checkout concept" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80'">
+          <div class="card-body"><p class="eyebrow">DEMO CHECKOUT</p><h3>Payments page</h3><p>Submit a fake checkout form. No payment is processed.</p><span class="text-link">Open checkout →</span></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Nova Store demo</span><span>Test site · No real purchases</span></footer>
+</body>
+</html>

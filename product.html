@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova Store | Product</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" data-track="nav_home">NOVA<span>STORE</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" data-track="nav_home">Home</a>
+      <a href="product.html" data-track="nav_product">Products</a>
+      <a href="payments.html" data-track="nav_payments">Payments</a>
+    </nav>
+  </header>
+  <main class="section product-layout">
+    <div class="product-photo-wrap">
+      <img class="product-photo" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=85" alt="Wireless headphones">
+      <span class="image-tag">POPULAR PICK</span>
+    </div>
+    <div class="product-info">
+      <p class="eyebrow">AUDIO · NOVA ESSENTIALS</p>
+      <h1>Everyday Wireless Headphones</h1>
+      <p class="price">₹2,499 <span>₹3,299</span></p>
+      <p class="muted">Comfortable, lightweight headphones for focus time, commutes and everyday listening.</p>
+      <ul class="details"><li>Up to 30 hours of demo battery life</li><li>Soft over-ear cushions</li><li>USB-C charging</li></ul>
+      <label for="color">Choose a finish</label>
+      <select id="color" name="color" data-track="product_color_change">
+        <option value="midnight">Midnight</option><option value="silver">Silver</option><option value="sand">Sand</option>
+      </select>
+      <label for="quantity">Quantity</label>
+      <input id="quantity" name="quantity" type="number" min="1" max="5" value="1" data-track="product_quantity_change">
+      <div class="actions">
+        <button class="button primary" id="add-to-cart" type="button" data-track="add_to_cart">Add to cart</button>
+        <a class="button secondary" href="payments.html" data-track="buy_now">Continue to checkout</a>
+      </div>
+      <p class="inline-message" id="cart-message" aria-live="polite" hidden></p>
+    </div>
+  </main>
+  <footer><span>© 2026 Nova Store demo</span><span>Test site · No real purchases</span></footer>
+</body>
+</html>
