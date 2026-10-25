@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const method = document.querySelector("#payment-method").value;
       // Intentionally do not log names, email addresses, or reference-field contents.
       logDemoEvent("demo_checkout_submit", { payment_method: method });
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "demo_checkout_submit",
+        payment_method: method
+      });
       checkoutMessage.textContent = "Demo form submitted successfully. No payment was processed.";
       checkoutMessage.hidden = false;
     });
